@@ -1,7 +1,3 @@
-# BCPortfolio
+# code-refactor
 
-Welcome to my portfolio!
-
-I built this site to showcase some various works I have completed. I hope that they demonstrate some of my skills and capabilities. 
-
-Nearly the entire site is built from modified Bootstrap 4 components. What was not readily available in B4 was coded from scratch. 
+I refactored this set of code to provide better accessability across platforms and browsers. Replaced generic tags with semantic tags; as a result some CSS code was adjusted. Comments breakdown the code line-by-line for better understanding of formatting and changes made.

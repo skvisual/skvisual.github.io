@@ -1,68 +1,82 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html> <!--Defines what type of document this is (html5 in this case).-->
+<html lang="en-us"> <!--Sets the native language for the website.-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<head> <!--Indicates the start of the head, contains information hidden from end user-->
+    <meta charset="UTF-8" /> <!--Sets the native charset (UTF-8, as shown here).-->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--This references the website's external CSS sheet. This containts the site's styling code.-->
+    <title>website</title> <!--This is the title of the website; what shows up in a browser's tab.-->
+</head> <!--Indicates the end of the head section of the document.-->
 
-    <title>sKv | Jason Kroening</title>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<body> <!--Defines the start of the body of the webpage. The content of the webpage is found here, including text sections and images. Tag assists with screen readers and accessibility-->
+    <header class="header"> <!--Identifies the beginning of the header. Typically contains site navigation links. assists with screen readers and accessibility-->
+        <h1>Hori<span class="seo">seo</span>n</h1> <!--This is the first headline of the body of the webpage. Typically indicates the overall subject of the page.-->
+        <nav class="header nav"> <!--Indicates the beginning of the navigation links, assists with screen readers and accessibility.-->
+            <ul> <!--start of the navigation unordered list-->
+                <li> <!--Start of first line item-->
+                    <a href="#search-engine-optimization">Search Engine Optimization</a> <!--Navigation link that redirects to a specific page.-->
+                </li> <!--End of first line item-->
+                <li> <!--Start of second line item-->
+                    <a href="#online-reputation-management">Online Reputation Management</a> <!--Navigation link that redirects to a specific page.-->
+                </li> <!--End of second line item-->
+                <li><!--start of third line item-->
+                    <a href="#social-media-marketing">Social Media Marketing</a> <!--Navigation link that redirects to a specific page.-->
+                </li> <!--End of third line item-->
+            </ul> <!--End of unordered list-->
+        </nav> <!--End of navigation element-->
+    </header> <!--Indicates the end of the header-->
+    <img class="hero"></img> <!--An image, set to be the background.-->
+    <section class="content"> <!--Indicates the beginning of a section of grouped content. Section tags also assist with accessbility.-->
+        <section class="search-engine-optimization"> <!--Defines the start of a section of content within the "content" section.-->
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" /> <!--Defines an image that is floated left.-->
+            <h2>Search Engine Optimization</h2> <!--Second headline of the page, by default <h2> text is smaller than <h1>.-->
+            <p> <!--Shows the begininng of a paragraph-->
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business. <!--Body of text within a section of an element.-->
+            </p> <!--Defines the end of the paragraph-->
+        </section> <!--Indicates the end of the child section-->
+        <section id="online-reputation-management" class="online-reputation-management"> <!--Indicates the beginning of a section of grouped content.-->
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" /> <!--Defines an image that is floated right.-->
+            <h2>Online Reputation Management</h2> <!--Third headline of the page, by default <h2> text is smaller than <h1>.-->
+            <p> <!--Indicates the start of another paragraph.-->
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business. <!--Another body of text within an element.-->
+            </p> <!--Indicates the end of the paragraph.-->
+        </section> <!--Shows the end of the child section.-->
+        <section id="social-media-marketing" class="social-media-marketing"> <!--Defines the beginning of another section of content.-->
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left" /> <!--Defines an image that is floated left.-->
+            <h2>Social Media Marketing</h2> <!--Fourth headline of the page,-->
+            <p> <!--Shows the start of another paragraph.-->
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation. <!--The third body of text within this element.-->
+            </p> <!--Indicates the end of the paragraph.-->
+        </section> <!--Defines the end of the child section-->
+    </section> <!--Shows the end of the parent section.-->
+    <section class="benefits"> <!--Indicates the start of a second parent section.-->
+        <section class="benefit-lead"> <!--Defines the start of a child section.-->
+            <h3>Lead Generation</h3> <!--Indicates another headline, however, it is smaller in size compared to <h1> or <h2>-->
+            <img src="./assets/images/lead-generation.png" /> <!--Defines an image-->
+            <p> <!--Indicates the start of a paragraph.-->
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website. <!--Text content-->
+            </p> <!--Defines the end of the the paragraph-->
+        </section> <!--Indicates the end of the child section-->
+        <section class="benefit-brand"> <!--The start of another child section.-->
+            <h3>Brand Awareness</h3> <!--Another headline of a child section.-->
+            <img src="./assets/images/brand-awareness.png" /> <!--Defines another image within the child section.-->
+            <p> <!--Indicates the start of a paragraph.-->
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business. <!--Body of text-->
+            </p> <!--Shows the end of the paragraph.-->
+        </section> <!--Defines the end the child section.-->
+        <section class="benefit-cost"> <!--Indicates the start of another child section.-->
+            <h3>Cost Management</h3> <!--Headline for the child section.-->
+            <img src="./assets/images/cost-management.png"></img> <!--Defines an image within the child section.-->
+            <p> <!--Indicates the start of a paragraph.-->
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page. <!--Text content.-->
+            </p> <!--Defines the end of the paragraph.-->
+        </section> <!--Defines the end of the child section.-->
+    </section>  <!--Defines the end of the PARENT section.-->
+    <footer class="footer"> <!--Indicates the start of the footer section. Contains copyright, contact and other indirectly related information at the bottom of the page-->
+        <h2>Made with ❤️️ by Horiseon</h2> <!--Headline within the footer.-->
+        <p> <!--Indicates the start of the footer paragraph-->
+            &copy; 2019 Horiseon Social Solution Services, Inc. <!--body of text within the footer-->
+        </p> <!--End of the footer paragraph-->
+    </footer> <!--End of the footer-->
+</body> <!--End of the body-->
 
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/welcomestyle.css">
-  </head>
-  <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">sKv | Jason Kroening</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav"> 
-                <a class="navportfolio nav-item nav-link" href="portfolio.html">portfolio <span class="sr-only">(current)</span></a>
-                <a class="navcontact nav-item nav-link" href="contact.html">contact</a>
-              </div>
-            </div>
-        </nav>
-    </div>
-
-    <div class="container">
-      <h1 class="col-12 header2">| about me |</h1>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="mugshot card border-0" style="width: 16rem;">
-          <img src="https://i.ibb.co/M1KFr5H/About-Me-Picture.jpg" class="card-img-top" alt="Jason Kroening">
-          
-          </div>
-
-        <div>
-          <div class="card-body cb2">
-            <p>Hello, and thanks for stopping by! My name is Jason Kroening. Here you will find a list of various works done by me.
-            <br>They are here to demonstrate my skill-set and show some of what I am capable of creating.
-            <br>
-            <br>
-            I am more than happy to discuss and answer any questions you may have regarding current or future projects. Please see the contact page for the best ways to open a line of communication. </p>
-          </div>
-        </div>
-
-                       
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="footerlogo col-12"> sKv | 2020</div>
-    </div>
-
-
-
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+</html> <!--End of the html document-->
